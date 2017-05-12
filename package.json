@@ -4,6 +4,7 @@
   "scripts": {
     "start": "concurrently \"npm run tsc:w\" \"npm run lite\" ",
     "lite": "lite-server",
+    "typings": "typings",
     "tsc": "tsc",
     "tsc:w": "tsc -w"
   },
@@ -33,10 +34,23 @@
     "zone.js": "^0.6.25"
   },
   "devDependencies": {
+    "@angular/cli": "^1.0.3",
     "@types/core-js": "^0.9.34",
     "@types/node": "^6.0.45",
     "concurrently": "^3.0.0",
     "lite-server": "^2.2.2",
     "typescript": "^2.0.3"
-  }
+  },
+  "description": "learnProject",
+  "main": "systemjs.config.js",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/isambard217/AngularLearning.git"
+  },
+  "author": "isambard",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/isambard217/AngularLearning/issues"
+  },
+  "homepage": "https://github.com/isambard217/AngularLearning#readme"
 }

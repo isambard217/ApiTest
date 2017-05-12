@@ -12,3 +12,11 @@ h2, h3 {
 body {
   margin: 2em;
 }
+
+
+.isFavourite{
+  color: "yellow";
+  font-weight: bold;
+
+}
+

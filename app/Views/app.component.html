@@ -1,11 +1,17 @@
 
- <h1> {{ title }} </h1>
+  <!-- <h1> {{ title }} </h1>
   
-  <img src="{{ imageUrl }}" />
+   <img style="width:100px;" src="{{ imageUrl }}" />
 
+ <!--  <span [(ngModel)]="isFavourite" > Favourite </span>
 
    <coursesa></coursesa>   
    <author></author>
    <message></message>
+-->
+
+   <favourite [isFavourite]="post.isFavourite" (change)="onFavouriteChange($event)"></favourite> 
+
+   <!-- <favourite [class.isFavourite]="post.isFavourite" [style.backgroundColor] = "post.isFavourite ? 'blue': 'red'"(click)="onClick()"></favourite>-->
         
 

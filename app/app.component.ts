@@ -1,4 +1,4 @@
-import { Component } from '@angular/core';
+import { Component, Input } from '@angular/core';
 
 @Component({
   selector: 'my-app',
@@ -13,13 +13,22 @@ export class AppComponent {
 
     title: string = "Angular App";
     isActive: Boolean = true;
+
     imageUrl = "http://assets.nydailynews.com/polopoly_fs/1.2444118.1448304691!/img/httpImage/image.jpg_gen/derivatives/article_750/crd205-000084-tif.jpg";
 
-
-    constructor(){
-
-
+    post = {
+        title: "Title",
+        isFavourite: true
     }
 
+    constructor(){
+    }
+
+    onClick(){
+    }
+
+    onFavouriteChange($event) {
+        console.log($event);
+    }
 
  }

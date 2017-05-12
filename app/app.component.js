@@ -23,7 +23,16 @@ System.register(["@angular/core"], function (exports_1, context_1) {
                     this.title = "Angular App";
                     this.isActive = true;
                     this.imageUrl = "http://assets.nydailynews.com/polopoly_fs/1.2444118.1448304691!/img/httpImage/image.jpg_gen/derivatives/article_750/crd205-000084-tif.jpg";
+                    this.post = {
+                        title: "Title",
+                        isFavourite: true
+                    };
                 }
+                AppComponent.prototype.onClick = function () {
+                };
+                AppComponent.prototype.onFavouriteChange = function ($event) {
+                    console.log($event);
+                };
                 return AppComponent;
             }());
             AppComponent = __decorate([
