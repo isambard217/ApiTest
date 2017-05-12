@@ -1,4 +1,3 @@
-import { FavouriteComponent } from './favourite.component';
 // Defined Modules
 import { NgModule }      from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
@@ -9,15 +8,14 @@ import { AppComponent }   from './app.component';
 import { CoursesComponent } from './courses.component';
 import { AuthorComponent } from './author.component';
 import { MessageComponent} from './message.component';
-
+import { HeartComponent } from './heart.component';
+import { FavouriteComponent } from './favourite.component';
 
 // Defined Services
 import { MessageService } from './message.service';
 
-
 // Defined Directives 
 import { AutoGrowDirective } from './auto-grow.directive';
-
 
 @NgModule({
   imports:      [ BrowserModule, FormsModule],
@@ -27,7 +25,8 @@ import { AutoGrowDirective } from './auto-grow.directive';
           AuthorComponent, 
           MessageComponent,
           AutoGrowDirective,
-          FavouriteComponent
+          FavouriteComponent,
+          HeartComponent
      ],
   providers: [ MessageService ],
   bootstrap: [ AppComponent ],
