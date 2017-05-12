@@ -7,20 +7,19 @@ import { Component, OnInit, Input, Output, EventEmitter } from '@angular/core';
 
 @Component({
     selector: "favourite",
-    template: ` 
-               <span 
-               class="glyphicon"
-               [class.glyphicon-star-empty]="!isFavourite" 
-               [class.glyphicon-star]="isFavourite"
-               (click)="onClick()"></span>
-            `       
+    templateUrl: 'app/Views/favourite.component.html',      
+    styles:[`
+        .glyphicon-star{
+            color:orange;
+        }
+
+    `]
 })
 export class FavouriteComponent {
 
     //Properties
     @Input() isFavourite = true;
     @Input() isReady = true;
-    @Input() isFavourite = false;
      title: string = "";
     @Output() change = new EventEmitter();        
 

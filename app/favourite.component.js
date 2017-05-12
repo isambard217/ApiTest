@@ -23,7 +23,6 @@ System.register(["@angular/core"], function (exports_1, context_1) {
                     //Properties
                     this.isFavourite = true;
                     this.isReady = true;
-                    this.isFavourite = false;
                     this.title = "";
                     this.change = new core_1.EventEmitter();
                 }
@@ -46,10 +45,6 @@ System.register(["@angular/core"], function (exports_1, context_1) {
                 __metadata("design:type", Object)
             ], FavouriteComponent.prototype, "isReady", void 0);
             __decorate([
-                core_1.Input,
-                __metadata("design:type", Object)
-            ], FavouriteComponent.prototype, "isFavourite", void 0);
-            __decorate([
                 core_1.Output(),
                 __metadata("design:type", Object)
             ], FavouriteComponent.prototype, "change", void 0);
@@ -62,7 +57,8 @@ System.register(["@angular/core"], function (exports_1, context_1) {
             FavouriteComponent = __decorate([
                 core_1.Component({
                     selector: "favourite",
-                    template: " \n               <span \n               class=\"glyphicon\"\n               [class.glyphicon-star-empty]=\"!isFavourite\" \n               [class.glyphicon-star]=\"isFavourite\"\n               (click)=\"onClick()\"></span>\n            "
+                    templateUrl: 'app/Views/favourite.component.html',
+                    styles: ["\n        .glyphicon-star{\n            color:orange;\n        }\n\n    "]
                 }),
                 __metadata("design:paramtypes", [])
             ], FavouriteComponent);
